@@ -1,0 +1,30 @@
+#top-hero {
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    //background-attachment: fixed;
+    width: 100%;
+    height: 0;
+    padding-bottom: 55%;
+    color: $white;
+
+    .hero-title {
+        margin-top: 17.5%;
+    }
+
+    #title,
+    #sub-title {
+        text-align: center;
+    }
+    #title {
+        font-family: $sans;
+        font-weight: $bold;
+        text-transform: uppercase;
+        border-bottom: 1px solid $white;
+        line-height: 1.4em;
+    }
+    #sub-title {
+        font-family: $serif;
+        font-weight: $reg;
+        font-style: italic;
+    }
+}

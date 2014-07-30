@@ -1,0 +1,48 @@
+{
+  "name": "assemble-template",
+  "description": "Some assembly required.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/daxhansen/assemble-template",
+  "author": {
+    "name": "daxhansen",
+    "url": "http://github.com/daxhansen/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daxhansen/assemble-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daxhansen/assemble-template/issues"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "grunt assemble"
+  },
+  "devDependencies": {
+    "assemble": "~0.4.33",
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-connect": "~0.6.0",
+    "grunt-contrib-compass": "~0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-uglify": "~0.4.0",
+    "load-grunt-tasks": "~0.2.1",
+    "time-grunt": "~0.2.7"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/daxhansen/assemble-template/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "assemble",
+    "templates",
+    "handlebars",
+    "site generator",
+    "site builder",
+    "grunt"
+  ]
+}

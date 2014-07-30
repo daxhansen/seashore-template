@@ -1,0 +1,53 @@
+body,
+html {
+    font-family: $sans;
+    font-weight: $reg;
+}
+
+.white,
+*.white {
+    background-color: $white;
+}
+
+.light-gray,
+*.light-gray {
+    background-color: $light-gray-1;
+    color: $dark-gray-1;
+}
+
+.dark-gray,
+*.dark-gray {
+    background-color: $dark-gray-1;
+    color: $white;
+}
+
+.text-dark,
+*.text-dark {
+    color: $dark-gray-1;
+}
+
+.text-mid,
+*.text-mid {
+    color: $mid-gray-1;
+}
+
+.text-light,
+*.text-light {
+    color: $light-gray-1;
+}
+
+
+.padding-sm {
+    padding-top: $padding-sm;
+    padding-bottom: $padding-sm;
+}
+
+.padding-md {
+    padding-top: $padding-md;
+    padding-bottom: $padding-md;
+}
+
+.padding-lg {
+    padding-top: $padding-lg;
+    padding-bottom: $padding-lg;
+}

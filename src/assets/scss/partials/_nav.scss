@@ -1,0 +1,130 @@
+nav {
+  margin-top: -1px;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      color: rgba(255, 255, 255, 0.6);
+      display: block;
+      border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+      //transition: all 0.5s ease;
+      padding-left: 0;
+      position: relative;
+      &:last-child {
+        border: none;
+      }
+      a {
+        color: rgba(255, 255, 255, 0.6);
+        display: block;
+        //padding: 20px;
+        //transition: all 0.5s ease;
+        padding-left: 0;
+        position: relative;
+        &:hover, &:focus {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+  }
+}
+
+$flipTransOn: all 0.4s ease 0s;
+$flipTransOff: all 0.4s ease 0s;
+
+.flip-nav {
+    background-color: $black;
+    max-height: 0;
+    overflow: hidden;
+    transition: $flipTransOff;
+    .top-nav {
+        opacity: 0.1;
+        transition: $flipTransOff;
+        transition-delay: 0.1s;
+        li a {
+            padding: 10px 20px;
+            transition: $flipTransOff;
+        }
+    }
+    
+    &.open {
+        background-color: $dark-gray-1;
+        max-height: 900px;
+        transition: $flipTransOn;
+        .top-nav {
+            opacity: 1;
+            transition: $flipTransOn;
+            li a {
+                padding: 20px;
+                transition: $flipTransOn;
+            }
+        }
+    }
+}
+
+#nav-toggle {
+  position: relative;
+  float: right;
+  right: 30px;
+  top: 30px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+  span {
+    &:before,
+    &:after {
+        cursor: pointer;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -o-border-radius: 5px;
+        height: 5px;
+        width: 20px;
+        position: absolute;
+        display: block;
+        content: '';
+        background: $white;
+    }
+    &:before{
+        transform: rotate(40deg);
+    }
+    &:after {
+        transform: rotate(-40deg);
+        left: 12px;
+    }
+
+
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    &:before, &:after {
+      transition: all 500ms ease-in-out;
+      -webkit-transition: all 500ms ease-in-out;
+      -moz-transition: all 500ms ease-in-out;
+      -o-transition: all 500ms ease-in-out;
+    }
+  }
+  &.active span {
+
+    &:before {
+        transform: rotate(-40deg);
+    }
+    &:after {
+        transform: rotate(40deg);
+    }
+  }
+}
+
+.navicon {
+  position: relative;
+  height: 26px;
+}
+
+.indicator {
+  position: absolute;
+  right: 0 !important;
+}
+
+.pull {
+  //display: none;
+}
