@@ -19,8 +19,22 @@
         font-family: $sans;
         font-weight: $bold;
         text-transform: uppercase;
-        border-bottom: 1px solid $white;
+        position: relative;
         line-height: 1.4em;
+        &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 50%;
+            border-bottom: 1px solid $white;
+        }
+        &.animated:after {
+            width: 100%;
+            left: 0;
+            transition: all ease 0.5s 0.75s;
+        }
     }
     #sub-title {
         font-family: $serif;

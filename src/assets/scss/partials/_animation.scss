@@ -1,0 +1,17 @@
+[class^="waypoint-"],
+[class*="waypoint-"] {
+    visibility: hidden;
+}
+*.animated {
+    visibility: visible;
+}
+
+.delay-short {
+    animation-delay: 0.5s; 
+    -webkit-animation-delay: 0.5s;
+}
+
+.delay-long {
+    animation-delay: 1s; 
+    -webkit-animation-delay: 1s;
+}

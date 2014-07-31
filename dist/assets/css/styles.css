@@ -61,43 +61,156 @@ html {
   padding-bottom: 90px;
 }
 
-/* line 2, ../../../src/assets/scss/partials/_type.scss */
+/* line 55, ../../../src/assets/scss/partials/_global.scss */
+* img {
+  max-width: 100%;
+}
+
+/* line 60, ../../../src/assets/scss/partials/_global.scss */
+.modal-body * {
+  max-width: 100%;
+}
+
+/* line 65, ../../../src/assets/scss/partials/_global.scss */
+.photo-wrapper {
+  background-color: #242830;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+  overflow: hidden;
+}
+/* line 73, ../../../src/assets/scss/partials/_global.scss */
+.photo-wrapper:after {
+  content: attr(data-name);
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: #f9fbfc;
+  opacity: 0;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+}
+/* line 82, ../../../src/assets/scss/partials/_global.scss */
+.photo-wrapper img {
+  opacity: 1;
+  -webkit-transition: all 0.2s 0.2s;
+          transition: all 0.2s 0.2s;
+}
+/* line 87, ../../../src/assets/scss/partials/_global.scss */
+.photo-wrapper:hover img {
+  opacity: 0.5;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+/* line 91, ../../../src/assets/scss/partials/_global.scss */
+.photo-wrapper:hover:after {
+  top: 10px;
+  opacity: 1;
+  -webkit-transition: all 0.3s 0.3s;
+          transition: all 0.3s 0.3s;
+}
+
+/* line 4, ../../../src/assets/scss/partials/_type.scss */
 p {
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-family: "Droid Serif", serif;
   font-weight: 400;
   line-height: 2em;
+  font-size: 1.2em;
 }
 
-/* line 9, ../../../src/assets/scss/partials/_type.scss */
+/* line 14, ../../../src/assets/scss/partials/_type.scss */
 .xlarge,
 *.xlarge {
   font-size: 6em;
 }
 @media screen and (max-width: 768px) {
-  /* line 9, ../../../src/assets/scss/partials/_type.scss */
+  /* line 14, ../../../src/assets/scss/partials/_type.scss */
   .xlarge,
   *.xlarge {
     font-size: 4em;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 9, ../../../src/assets/scss/partials/_type.scss */
+  /* line 14, ../../../src/assets/scss/partials/_type.scss */
   .xlarge,
   *.xlarge {
     font-size: 2em;
   }
 }
 
-/* line 19, ../../../src/assets/scss/partials/_type.scss */
+/* line 24, ../../../src/assets/scss/partials/_type.scss */
 .kern-loose {
   letter-spacing: 0.25em;
   margin-right: -0.25em;
 }
 
-/* line 25, ../../../src/assets/scss/partials/_type.scss */
+/* line 30, ../../../src/assets/scss/partials/_type.scss */
 .caps,
 *.caps {
   text-transform: uppercase;
+}
+
+/* line 34, ../../../src/assets/scss/partials/_type.scss */
+blockquote {
+  font-size: 1.4em;
+  font-family: "Droid Serif", serif;
+  font-style: italic;
+  color: #526d77;
+}
+
+/* line 1, ../../../src/assets/scss/partials/_buttons.scss */
+.btn {
+  display: inline-block;
+}
+/* line 3, ../../../src/assets/scss/partials/_buttons.scss */
+.btn.btn-hollow {
+  border: 2px solid;
+  text-transform: uppercase;
+  border-radius: 0px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+/* line 9, ../../../src/assets/scss/partials/_buttons.scss */
+.btn.btn-hollow:hover {
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+}
+/* line 13, ../../../src/assets/scss/partials/_buttons.scss */
+.btn.btn-hollow.green {
+  color: #ebffbc;
+  border-color: #ebffbc;
+}
+/* line 16, ../../../src/assets/scss/partials/_buttons.scss */
+.btn.btn-hollow.green:hover {
+  color: #faffef;
+  border-color: #faffef;
+}
+
+/* line 2, ../../../src/assets/scss/partials/_animation.scss */
+[class^="waypoint-"],
+[class*="waypoint-"] {
+  visibility: hidden;
+}
+
+/* line 5, ../../../src/assets/scss/partials/_animation.scss */
+*.animated {
+  visibility: visible;
+}
+
+/* line 9, ../../../src/assets/scss/partials/_animation.scss */
+.delay-short {
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+}
+
+/* line 14, ../../../src/assets/scss/partials/_animation.scss */
+.delay-long {
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
 }
 
 /* line 1, ../../../src/assets/scss/partials/_nav.scss */
@@ -275,10 +388,27 @@ nav ul li a:hover, nav ul li a:focus {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border-bottom: 1px solid #f9fbfc;
+  position: relative;
   line-height: 1.4em;
 }
-/* line 25, ../../../src/assets/scss/partials/_hero.scss */
+/* line 24, ../../../src/assets/scss/partials/_hero.scss */
+#top-hero #title:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  border-bottom: 1px solid #f9fbfc;
+}
+/* line 33, ../../../src/assets/scss/partials/_hero.scss */
+#top-hero #title.animated:after {
+  width: 100%;
+  left: 0;
+  -webkit-transition: all ease 0.5s 0.75s;
+          transition: all ease 0.5s 0.75s;
+}
+/* line 39, ../../../src/assets/scss/partials/_hero.scss */
 #top-hero #sub-title {
   font-family: "Droid Serif", serif;
   font-weight: 400;

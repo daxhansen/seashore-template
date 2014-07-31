@@ -1,0 +1,22 @@
+.btn {
+    display: inline-block;
+    &.btn-hollow {
+        border: 2px solid;
+        text-transform: uppercase;
+        border-radius: 0px;
+        transition: $button-hover;
+
+        &:hover {
+            transition: $button-hover;
+        }
+
+        &.green {
+            color: $green-1;
+            border-color: $green-1;
+            &:hover {
+                color: lighten($green-1, 10%);
+                border-color: lighten($green-1, 10%);
+            }
+        }
+    }
+}

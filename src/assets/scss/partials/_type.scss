@@ -1,8 +1,13 @@
+h1, h2, h3, h4, h5 {
 
+}
 p {
+    margin-top: 15px;
+    margin-bottom: 15px;
     font-family: $serif;
     font-weight: $reg;
     line-height: 2em;
+    font-size: 1.2em;
 }
 
 .xlarge,
@@ -24,4 +29,11 @@ p {
 .caps,
 *.caps {
     text-transform: uppercase;
+}
+
+blockquote {
+    font-size: 1.4em;
+    font-family: $serif;
+    font-style: italic;
+    color: $mid-gray-1;
 }

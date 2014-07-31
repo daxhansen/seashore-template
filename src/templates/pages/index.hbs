@@ -3,25 +3,77 @@ title: Single page, responsive template
 heading: 'Yo, Assemble!'
 lead: Welcome to my blog!
 ---
-
 <section id="section-a" class="light-gray padding-lg">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="col-md-8 col-md-offset-2 text-center waypoint-2">
                 <h3>{{site.section-a-title}}</h3>
                 <p class="text-mid">{{site.section-a-copy}}</p>
             </div>
         </div>
     </div>
 </section>
-
 <section id="section-b" class="white padding-lg">
     <div class="container">
+        <div class="row waypoint-3">
+            {{#projects}}
+            <div class="col-md-4 text-center">
+                <!-- Button trigger modal -->
+                <a href="#!" data-toggle="modal" data-target="#{{item.id}}">
+                    <div class="photo-wrapper" data-name="{{item.name}}">
+                        <img src="assets/img/{{item.image}}" alt="{{item.name}}">
+                    </div>
+                </a>
+
+                <!-- Modal -->
+                <div class="modal fade" id="{{item.id}}" tabindex="-1" role="dialog" aria-labelledby="project-1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="project-1Label">{{item.name}}</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/img/{{item.image}}" alt="{{item.name}} - full size">
+                            </div>
+                            <div class="modal-footer">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{/projects}}
+        </div>
+    </div>
+</section>
+<section id="section-c" class="white padding-lg">
+    <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-                <h4 class="caps">You're Going to make something awesome, I just know it.</h4>
-                <p></p>
+            <div class="col-md-8 col-md-offset-2">
+                <h4 class="caps text-center">You're Going to make something awesome, I just know it.</h4>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <blockquote>
+                    I would rather be ashes than dust!
+                    <br/><br/>
+                    I would rather that my spark should burn out in a brilliant blaze than it should be stifled by dry-rot.<br/><br/>
+                    I would rather be a superb meteor, every atom of me in magnificent glow, than a sleepy and permanent planet.<br/><br/>
+                    The function of man is to live, not to exist.<br/><br/>
+                    I shall not waste my days trying to prolong them.<br/><br/>
+                    I shall use my time.<br/><br/>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="row">
+        {{#projects}}
+        <div class="col-md-4">
+            Name: {{item.name}}
+        </div>
+        {{/projects}}
     </div>
 </section>
