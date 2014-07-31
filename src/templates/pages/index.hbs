@@ -7,6 +7,7 @@ lead: Welcome to my blog!
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center waypoint-2">
+                <div class="anchor"><span class="icon-anchor"></span></div>
                 <h3>{{site.section-a-title}}</h3>
                 <p class="text-mid">{{site.section-a-copy}}</p>
             </div>
@@ -15,16 +16,15 @@ lead: Welcome to my blog!
 </section>
 <section id="section-b" class="white padding-lg">
     <div class="container">
-        <div class="row waypoint-3">
-            {{#projects}}
-            <div class="col-md-4 text-center">
+        <div class="row">
+            {{#site.projects}}
+            <div class="col-md-4">
                 <!-- Button trigger modal -->
                 <a href="#!" data-toggle="modal" data-target="#{{item.id}}">
-                    <div class="photo-wrapper" data-name="{{item.name}}">
+                    <div class="waypoint-3 photo-wrapper" data-name="{{item.name}}">
                         <img src="assets/img/{{item.image}}" alt="{{item.name}}">
                     </div>
                 </a>
-
                 <!-- Modal -->
                 <div class="modal fade" id="{{item.id}}" tabindex="-1" role="dialog" aria-labelledby="project-1Label" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -37,12 +37,15 @@ lead: Welcome to my blog!
                                 <img src="assets/img/{{item.image}}" alt="{{item.name}} - full size">
                             </div>
                             <div class="modal-footer">
+                                <p class="project-description">
+                                    {{item.description}}
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {{/projects}}
+            {{/site.projects}}
         </div>
     </div>
 </section>
@@ -68,12 +71,18 @@ lead: Welcome to my blog!
         </div>
     </div>
 </section>
-<section>
-    <div class="row">
-        {{#projects}}
-        <div class="col-md-4">
-            Name: {{item.name}}
+<section id="section-d" class="dark-gray padding-lg" data-stellar-background-ratio="0.125">
+    <div class="container">
+        <div class="row">
+            {{#site.process}}
+            <div class="col-md-4 text-center waypoint-4">
+                <h3><span class="large icon-{{item.icon}}"></span></h3>
+                <h4 class="text-light caps">{{item.title}}</h4>
+                <p class="text-mid-2">
+                    {{item.description}}
+                </p>
+            </div>
+            {{/site.process}}
         </div>
-        {{/projects}}
     </div>
 </section>

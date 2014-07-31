@@ -1,0 +1,12 @@
+
+section {
+    overflow: hidden;
+}
+
+#section-d {
+    background-image: url('../img/dark-bg.jpg');
+    [class^="icon-"], [class*=" icon-"] {
+        display: block;
+        margin-bottom: 30px;
+    }
+}

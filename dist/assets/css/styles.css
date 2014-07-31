@@ -5,73 +5,79 @@ html {
   font-weight: 400;
 }
 
-/* line 8, ../../../src/assets/scss/partials/_global.scss */
+/* line 9, ../../../src/assets/scss/partials/_global.scss */
 .white,
 *.white {
   background-color: #f9fbfc;
 }
 
-/* line 13, ../../../src/assets/scss/partials/_global.scss */
+/* line 14, ../../../src/assets/scss/partials/_global.scss */
 .light-gray,
 *.light-gray {
   background-color: #dee5ea;
   color: #242830;
 }
 
-/* line 19, ../../../src/assets/scss/partials/_global.scss */
+/* line 20, ../../../src/assets/scss/partials/_global.scss */
 .dark-gray,
 *.dark-gray {
   background-color: #242830;
   color: #f9fbfc;
 }
 
-/* line 25, ../../../src/assets/scss/partials/_global.scss */
+/* line 26, ../../../src/assets/scss/partials/_global.scss */
 .text-dark,
 *.text-dark {
   color: #242830;
 }
 
-/* line 30, ../../../src/assets/scss/partials/_global.scss */
+/* line 31, ../../../src/assets/scss/partials/_global.scss */
 .text-mid,
 *.text-mid {
   color: #526d77;
 }
 
-/* line 35, ../../../src/assets/scss/partials/_global.scss */
+/* line 36, ../../../src/assets/scss/partials/_global.scss */
+.text-mid-2,
+*.text-mid-2 {
+  color: #8fa5ad;
+}
+
+/* line 41, ../../../src/assets/scss/partials/_global.scss */
 .text-light,
 *.text-light {
   color: #dee5ea;
 }
 
-/* line 40, ../../../src/assets/scss/partials/_global.scss */
+/* line 46, ../../../src/assets/scss/partials/_global.scss */
 .padding-sm {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-/* line 45, ../../../src/assets/scss/partials/_global.scss */
+/* line 51, ../../../src/assets/scss/partials/_global.scss */
 .padding-md {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-/* line 50, ../../../src/assets/scss/partials/_global.scss */
+/* line 56, ../../../src/assets/scss/partials/_global.scss */
 .padding-lg {
   padding-top: 90px;
   padding-bottom: 90px;
 }
 
-/* line 55, ../../../src/assets/scss/partials/_global.scss */
+/* line 61, ../../../src/assets/scss/partials/_global.scss */
 * img {
   max-width: 100%;
 }
 
-/* line 60, ../../../src/assets/scss/partials/_global.scss */
+/* line 66, ../../../src/assets/scss/partials/_global.scss */
 .modal-body * {
   max-width: 100%;
 }
 
-/* line 65, ../../../src/assets/scss/partials/_global.scss */
+/* line 71, ../../../src/assets/scss/partials/_global.scss */
 .photo-wrapper {
   background-color: #242830;
   top: 0;
@@ -81,7 +87,7 @@ html {
   position: relative;
   overflow: hidden;
 }
-/* line 73, ../../../src/assets/scss/partials/_global.scss */
+/* line 79, ../../../src/assets/scss/partials/_global.scss */
 .photo-wrapper:after {
   content: attr(data-name);
   position: absolute;
@@ -92,24 +98,49 @@ html {
   -webkit-transition: all 0.2s;
           transition: all 0.2s;
 }
-/* line 82, ../../../src/assets/scss/partials/_global.scss */
+/* line 88, ../../../src/assets/scss/partials/_global.scss */
 .photo-wrapper img {
   opacity: 1;
   -webkit-transition: all 0.2s 0.2s;
           transition: all 0.2s 0.2s;
 }
-/* line 87, ../../../src/assets/scss/partials/_global.scss */
+/* line 93, ../../../src/assets/scss/partials/_global.scss */
 .photo-wrapper:hover img {
   opacity: 0.5;
   -webkit-transition: all 0.3s;
           transition: all 0.3s;
 }
-/* line 91, ../../../src/assets/scss/partials/_global.scss */
+/* line 97, ../../../src/assets/scss/partials/_global.scss */
 .photo-wrapper:hover:after {
   top: 10px;
   opacity: 1;
   -webkit-transition: all 0.3s 0.3s;
           transition: all 0.3s 0.3s;
+}
+
+/* line 105, ../../../src/assets/scss/partials/_global.scss */
+.anchor {
+  text-align: center;
+  color: #526d77;
+  position: relative;
+}
+/* line 110, ../../../src/assets/scss/partials/_global.scss */
+.anchor:before, .anchor:after {
+  content: '';
+  display: inline-block;
+  background-color: #c1cfd4;
+  height: 1px;
+  width: 8em;
+  position: relative;
+  top: -6px;
+}
+/* line 119, ../../../src/assets/scss/partials/_global.scss */
+.anchor:before {
+  right: 12px;
+}
+/* line 122, ../../../src/assets/scss/partials/_global.scss */
+.anchor:after {
+  left: 12px;
 }
 
 /* line 4, ../../../src/assets/scss/partials/_type.scss */
@@ -121,40 +152,64 @@ p {
   line-height: 2em;
   font-size: 1.2em;
 }
+/* line 12, ../../../src/assets/scss/partials/_type.scss */
+p.project-description {
+  text-align: left;
+}
 
-/* line 14, ../../../src/assets/scss/partials/_type.scss */
+/* line 18, ../../../src/assets/scss/partials/_type.scss */
 .xlarge,
 *.xlarge {
   font-size: 6em;
 }
 @media screen and (max-width: 768px) {
-  /* line 14, ../../../src/assets/scss/partials/_type.scss */
+  /* line 18, ../../../src/assets/scss/partials/_type.scss */
   .xlarge,
   *.xlarge {
     font-size: 4em;
   }
 }
 @media screen and (max-width: 320px) {
-  /* line 14, ../../../src/assets/scss/partials/_type.scss */
+  /* line 18, ../../../src/assets/scss/partials/_type.scss */
   .xlarge,
   *.xlarge {
     font-size: 2em;
   }
 }
 
-/* line 24, ../../../src/assets/scss/partials/_type.scss */
+/* line 29, ../../../src/assets/scss/partials/_type.scss */
+.large,
+*.large {
+  font-size: 4em;
+}
+@media screen and (max-width: 768px) {
+  /* line 29, ../../../src/assets/scss/partials/_type.scss */
+  .large,
+  *.large {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 29, ../../../src/assets/scss/partials/_type.scss */
+  .large,
+  *.large {
+    font-size: 1.8em;
+  }
+}
+
+/* line 39, ../../../src/assets/scss/partials/_type.scss */
 .kern-loose {
   letter-spacing: 0.25em;
   margin-right: -0.25em;
 }
 
-/* line 30, ../../../src/assets/scss/partials/_type.scss */
+/* line 45, ../../../src/assets/scss/partials/_type.scss */
 .caps,
 *.caps {
   text-transform: uppercase;
 }
 
-/* line 34, ../../../src/assets/scss/partials/_type.scss */
+/* line 49, ../../../src/assets/scss/partials/_type.scss */
 blockquote {
   font-size: 1.4em;
   font-family: "Droid Serif", serif;
@@ -211,6 +266,169 @@ blockquote {
 .delay-long {
   animation-delay: 1s;
   -webkit-animation-delay: 1s;
+}
+
+@font-face {
+  font-family: "seashore-icons";
+  src: url("../icons/seashore-icons.eot?ff6avq");
+  src: url("../icons/seashore-icons.eot?#iefixff6avq") format("embedded-opentype"), url("../icons/seashore-icons.woff?ff6avq") format("woff"), url("../icons/seashore-icons.ttf?ff6avq") format("truetype"), url("../icons/seashore-icons.svg?ff6avq#seashore-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 14, ../../../src/assets/scss/partials/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'seashore-icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 28, ../../../src/assets/scss/partials/_icons.scss */
+.icon-camera:before {
+  content: "\f083";
+}
+
+/* line 31, ../../../src/assets/scss/partials/_icons.scss */
+.icon-left-circle:before {
+  content: "\f137";
+}
+
+/* line 34, ../../../src/assets/scss/partials/_icons.scss */
+.icon-right-circle:before {
+  content: "\f138";
+}
+
+/* line 37, ../../../src/assets/scss/partials/_icons.scss */
+.icon-up-circle:before {
+  content: "\f139";
+}
+
+/* line 40, ../../../src/assets/scss/partials/_icons.scss */
+.icon-down-circle:before {
+  content: "\f13a";
+}
+
+/* line 43, ../../../src/assets/scss/partials/_icons.scss */
+.icon-anchor:before {
+  content: "\f13d";
+}
+
+/* line 46, ../../../src/assets/scss/partials/_icons.scss */
+.icon-send:before {
+  content: "\f1d8";
+}
+
+/* line 49, ../../../src/assets/scss/partials/_icons.scss */
+.icon-pencil:before {
+  content: "\e600";
+}
+
+/* line 52, ../../../src/assets/scss/partials/_icons.scss */
+.icon-support:before {
+  content: "\e601";
+}
+
+/* line 55, ../../../src/assets/scss/partials/_icons.scss */
+.icon-compass:before {
+  content: "\e602";
+}
+
+/* line 58, ../../../src/assets/scss/partials/_icons.scss */
+.icon-spinner:before {
+  content: "\e603";
+}
+
+/* line 61, ../../../src/assets/scss/partials/_icons.scss */
+.icon-zoomin:before {
+  content: "\e614";
+}
+
+/* line 64, ../../../src/assets/scss/partials/_icons.scss */
+.icon-cogs:before {
+  content: "\e604";
+}
+
+/* line 67, ../../../src/assets/scss/partials/_icons.scss */
+.icon-mug:before {
+  content: "\e605";
+  margin-right: -0.3em;
+}
+
+/* line 71, ../../../src/assets/scss/partials/_icons.scss */
+.icon-code:before {
+  content: "\e606";
+}
+
+/* line 74, ../../../src/assets/scss/partials/_icons.scss */
+.icon-facebook:before {
+  content: "\e607";
+}
+
+/* line 77, ../../../src/assets/scss/partials/_icons.scss */
+.icon-twitter:before {
+  content: "\e608";
+}
+
+/* line 80, ../../../src/assets/scss/partials/_icons.scss */
+.icon-feed:before {
+  content: "\e609";
+}
+
+/* line 83, ../../../src/assets/scss/partials/_icons.scss */
+.icon-dribbble:before {
+  content: "\e60a";
+}
+
+/* line 86, ../../../src/assets/scss/partials/_icons.scss */
+.icon-github:before {
+  content: "\e60b";
+}
+
+/* line 89, ../../../src/assets/scss/partials/_icons.scss */
+.icon-html5:before {
+  content: "\e60c";
+}
+
+/* line 92, ../../../src/assets/scss/partials/_icons.scss */
+.icon-css3:before {
+  content: "\e60d";
+}
+
+/* line 95, ../../../src/assets/scss/partials/_icons.scss */
+.icon-chrome:before {
+  content: "\e60e";
+}
+
+/* line 98, ../../../src/assets/scss/partials/_icons.scss */
+.icon-safari:before {
+  content: "\e60f";
+}
+
+/* line 101, ../../../src/assets/scss/partials/_icons.scss */
+.icon-arrow-left:before {
+  content: "\e610";
+}
+
+/* line 104, ../../../src/assets/scss/partials/_icons.scss */
+.icon-arrow-down:before {
+  content: "\e611";
+}
+
+/* line 107, ../../../src/assets/scss/partials/_icons.scss */
+.icon-arrow-up:before {
+  content: "\e612";
+}
+
+/* line 110, ../../../src/assets/scss/partials/_icons.scss */
+.icon-arrow-right:before {
+  content: "\e613";
 }
 
 /* line 1, ../../../src/assets/scss/partials/_nav.scss */
@@ -413,4 +631,20 @@ nav ul li a:hover, nav ul li a:focus {
   font-family: "Droid Serif", serif;
   font-weight: 400;
   font-style: italic;
+}
+
+/* line 2, ../../../src/assets/scss/partials/_modules.scss */
+section {
+  overflow: hidden;
+}
+
+/* line 6, ../../../src/assets/scss/partials/_modules.scss */
+#section-d {
+  background-image: url("../img/dark-bg.jpg");
+  background-position: 50%;
+}
+/* line 9, ../../../src/assets/scss/partials/_modules.scss */
+#section-d [class^="icon-"], #section-d [class*=" icon-"] {
+  display: block;
+  margin-bottom: 30px;
 }

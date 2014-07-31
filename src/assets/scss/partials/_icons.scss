@@ -1,0 +1,112 @@
+
+
+@font-face {
+    font-family: $icons;
+    src:url('../icons/seashore-icons.eot?ff6avq');
+    src:url('../icons/seashore-icons.eot?#iefixff6avq') format('embedded-opentype'),
+        url('../icons/seashore-icons.woff?ff6avq') format('woff'),
+        url('../icons/seashore-icons.ttf?ff6avq') format('truetype'),
+        url('../icons/seashore-icons.svg?ff6avq#seashore-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'seashore-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-camera:before {
+    content: "\f083";
+}
+.icon-left-circle:before {
+    content: "\f137";
+}
+.icon-right-circle:before {
+    content: "\f138";
+}
+.icon-up-circle:before {
+    content: "\f139";
+}
+.icon-down-circle:before {
+    content: "\f13a";
+}
+.icon-anchor:before {
+    content: "\f13d";
+}
+.icon-send:before {
+    content: "\f1d8";
+}
+.icon-pencil:before {
+    content: "\e600";
+}
+.icon-support:before {
+    content: "\e601";
+}
+.icon-compass:before {
+    content: "\e602";
+}
+.icon-spinner:before {
+    content: "\e603";
+}
+.icon-zoomin:before {
+    content: "\e614";
+}
+.icon-cogs:before {
+    content: "\e604";
+}
+.icon-mug:before {
+    content: "\e605";
+    margin-right: -0.3em;
+}
+.icon-code:before {
+    content: "\e606";
+}
+.icon-facebook:before {
+    content: "\e607";
+}
+.icon-twitter:before {
+    content: "\e608";
+}
+.icon-feed:before {
+    content: "\e609";
+}
+.icon-dribbble:before {
+    content: "\e60a";
+}
+.icon-github:before {
+    content: "\e60b";
+}
+.icon-html5:before {
+    content: "\e60c";
+}
+.icon-css3:before {
+    content: "\e60d";
+}
+.icon-chrome:before {
+    content: "\e60e";
+}
+.icon-safari:before {
+    content: "\e60f";
+}
+.icon-arrow-left:before {
+    content: "\e610";
+}
+.icon-arrow-down:before {
+    content: "\e611";
+}
+.icon-arrow-up:before {
+    content: "\e612";
+}
+.icon-arrow-right:before {
+    content: "\e613";
+}

@@ -3,3 +3,37 @@ sub-title: A Template from Underbelly Creative
 
 section-a-title: Simple, Creative Template
 section-a-copy: Always dream and shoot higher than you know you can do. Don’t bother just to be better than your contemporaries or predecessors. Try to be better than yourself.
+
+
+projects:
+    - item: &id-a-001
+        id: project-01
+        name: My First Project
+        image: project-01.jpg
+        description: Take everything you like seriously, except yourselves.
+    - item: &id-a-002
+        id: project-02
+        name: My Second Project
+        image: project-02.jpg
+        description: I’ve been absolutely terrified every moment of my life and I’ve never let it keep me from doing a single thing that I wanted to do.
+    - item: &id-a-003
+        id: project-03
+        name: My Third Project
+        image: project-03.jpg
+        description: We do not believe in ourselves until someone reveals that deep inside us something is valuable, worth listening to, worthy of our trust, sacred to our touch. Once we believe in ourselves we can risk curiosity, wonder, spontaneous delight or any experience that reveals the human spirit.
+
+process:
+    - item: &id-b-001
+        title: Planning
+        icon: mug
+        description: Art is not about thinking something up. It is the opposite–getting something down.
+
+    - item: &id-b-002
+        title: Execution
+        icon: pencil
+        description: Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.
+
+    - item: &id-b-002
+        title: Support
+        icon: support
+        description: Everything that we encounter leaves traces behind. Everything contributes imperceptibly to our education.

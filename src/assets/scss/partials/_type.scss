@@ -8,6 +8,10 @@ p {
     font-weight: $reg;
     line-height: 2em;
     font-size: 1.2em;
+
+    &.project-description {
+        text-align: left;
+    }
 }
 
 .xlarge,
@@ -18,6 +22,17 @@ p {
     }
     @media screen and (max-width: $screen-sm-min) {
         font-size: 2em;
+    }
+}
+
+.large,
+*.large {
+    font-size: 4em;
+    @media screen and (max-width: $screen-md-min) {
+        font-size: 3em;
+    }
+    @media screen and (max-width: $screen-sm-min) {
+        font-size: 1.8em;
     }
 }
 

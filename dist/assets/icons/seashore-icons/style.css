@@ -1,0 +1,109 @@
+@font-face {
+	font-family: 'seashore-icons';
+	src:url('fonts/seashore-icons.eot?ff6avq');
+	src:url('fonts/seashore-icons.eot?#iefixff6avq') format('embedded-opentype'),
+		url('fonts/seashore-icons.woff?ff6avq') format('woff'),
+		url('fonts/seashore-icons.ttf?ff6avq') format('truetype'),
+		url('fonts/seashore-icons.svg?ff6avq#seashore-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'seashore-icons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-uniF083:before {
+	content: "\f083";
+}
+.icon-uniF137:before {
+	content: "\f137";
+}
+.icon-uniF138:before {
+	content: "\f138";
+}
+.icon-uniF139:before {
+	content: "\f139";
+}
+.icon-uniF13A:before {
+	content: "\f13a";
+}
+.icon-uniF13D:before {
+	content: "\f13d";
+}
+.icon-uniF1D8:before {
+	content: "\f1d8";
+}
+.icon-pencil:before {
+	content: "\e600";
+}
+.icon-support:before {
+	content: "\e601";
+}
+.icon-compass:before {
+	content: "\e602";
+}
+.icon-spinner:before {
+	content: "\e603";
+}
+.icon-zoomin:before {
+	content: "\e614";
+}
+.icon-cogs:before {
+	content: "\e604";
+}
+.icon-mug:before {
+	content: "\e605";
+}
+.icon-code:before {
+	content: "\e606";
+}
+.icon-facebook:before {
+	content: "\e607";
+}
+.icon-twitter:before {
+	content: "\e608";
+}
+.icon-feed:before {
+	content: "\e609";
+}
+.icon-dribbble:before {
+	content: "\e60a";
+}
+.icon-github:before {
+	content: "\e60b";
+}
+.icon-html5:before {
+	content: "\e60c";
+}
+.icon-css3:before {
+	content: "\e60d";
+}
+.icon-chrome:before {
+	content: "\e60e";
+}
+.icon-safari:before {
+	content: "\e60f";
+}
+.icon-arrow-left:before {
+	content: "\e610";
+}
+.icon-arrow-down:before {
+	content: "\e611";
+}
+.icon-arrow-up:before {
+	content: "\e612";
+}
+.icon-arrow-right:before {
+	content: "\e613";
+}

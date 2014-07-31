@@ -4,6 +4,7 @@ html {
     font-weight: $reg;
 }
 
+
 .white,
 *.white {
     background-color: $white;
@@ -29,6 +30,11 @@ html {
 .text-mid,
 *.text-mid {
     color: $mid-gray-1;
+}
+
+.text-mid-2,
+*.text-mid-2 {
+    color: $mid-gray-2;
 }
 
 .text-light,
@@ -93,5 +99,27 @@ html {
             opacity: 1;
             transition: all 0.3s 0.3s;
         }
+    }
+}
+
+.anchor {
+    text-align: center;
+    color: $mid-gray-1;
+    position: relative;
+    &:before,
+    &:after {
+        content: '';
+        display: inline-block;
+        background-color: lighten($mid-gray-1, 40%);
+        height: 1px;
+        width: 8em;
+        position: relative;
+        top: -6px;
+    }
+    &:before {
+        right: 12px;
+    }
+    &:after {
+        left: 12px;
     }
 }

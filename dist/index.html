@@ -9,8 +9,6 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/plugins/modal/modal.css">
-
 
     <!-- Bootstrap theme -->
     <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
@@ -49,7 +47,7 @@
 </nav>
 <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
 
-    <div id="top-hero">
+    <div id="top-hero" data-stellar-background-ratio="0.25">
     <div class="container">
         <div class="row text-center">
             <div class="col-sm-8 col-sm-offset-2 hero-title waypoint-1">
@@ -75,6 +73,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center waypoint-2">
+                <div class="anchor"><span class="icon-anchor"></span></div>
                 <h3>Simple, Creative Template</h3>
                 <p class="text-mid">Always dream and shoot higher than you know you can do. Don’t bother just to be better than your contemporaries or predecessors. Try to be better than yourself.</p>
             </div>
@@ -83,16 +82,15 @@
 </section>
 <section id="section-b" class="white padding-lg">
     <div class="container">
-        <div class="row waypoint-3">
+        <div class="row">
             
-            <div class="col-md-4 text-center">
+            <div class="col-md-4">
                 <!-- Button trigger modal -->
                 <a href="#!" data-toggle="modal" data-target="#project-01">
-                    <div class="photo-wrapper" data-name="My First Project">
+                    <div class="waypoint-3 photo-wrapper" data-name="My First Project">
                         <img src="assets/img/project-01.jpg" alt="My First Project">
                     </div>
                 </a>
-
                 <!-- Modal -->
                 <div class="modal fade" id="project-01" tabindex="-1" role="dialog" aria-labelledby="project-1Label" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -105,20 +103,22 @@
                                 <img src="assets/img/project-01.jpg" alt="My First Project - full size">
                             </div>
                             <div class="modal-footer">
+                                <p class="project-description">
+                                    Take everything you like seriously, except yourselves.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="col-md-4 text-center">
+            <div class="col-md-4">
                 <!-- Button trigger modal -->
                 <a href="#!" data-toggle="modal" data-target="#project-02">
-                    <div class="photo-wrapper" data-name="My Second Project">
+                    <div class="waypoint-3 photo-wrapper" data-name="My Second Project">
                         <img src="assets/img/project-02.jpg" alt="My Second Project">
                     </div>
                 </a>
-
                 <!-- Modal -->
                 <div class="modal fade" id="project-02" tabindex="-1" role="dialog" aria-labelledby="project-1Label" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -131,20 +131,22 @@
                                 <img src="assets/img/project-02.jpg" alt="My Second Project - full size">
                             </div>
                             <div class="modal-footer">
+                                <p class="project-description">
+                                    I’ve been absolutely terrified every moment of my life and I’ve never let it keep me from doing a single thing that I wanted to do.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="col-md-4 text-center">
+            <div class="col-md-4">
                 <!-- Button trigger modal -->
                 <a href="#!" data-toggle="modal" data-target="#project-03">
-                    <div class="photo-wrapper" data-name="My Third Project">
+                    <div class="waypoint-3 photo-wrapper" data-name="My Third Project">
                         <img src="assets/img/project-03.jpg" alt="My Third Project">
                     </div>
                 </a>
-
                 <!-- Modal -->
                 <div class="modal fade" id="project-03" tabindex="-1" role="dialog" aria-labelledby="project-1Label" aria-hidden="true">
                     <div class="modal-dialog modal-lg">
@@ -157,6 +159,9 @@
                                 <img src="assets/img/project-03.jpg" alt="My Third Project - full size">
                             </div>
                             <div class="modal-footer">
+                                <p class="project-description">
+                                    We do not believe in ourselves until someone reveals that deep inside us something is valuable, worth listening to, worthy of our trust, sacred to our touch. Once we believe in ourselves we can risk curiosity, wonder, spontaneous delight or any experience that reveals the human spirit.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -188,21 +193,35 @@
         </div>
     </div>
 </section>
-<section>
-    <div class="row">
-        
-        <div class="col-md-4">
-            Name: My First Project
+<section id="section-d" class="dark-gray padding-lg" data-stellar-background-ratio="0.125">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4 text-center waypoint-4">
+                <h3><span class="large icon-mug"></span></h3>
+                <h4 class="text-light caps">Planning</h4>
+                <p class="text-mid-2">
+                    Art is not about thinking something up. It is the opposite–getting something down.
+                </p>
+            </div>
+            
+            <div class="col-md-4 text-center waypoint-4">
+                <h3><span class="large icon-pencil"></span></h3>
+                <h4 class="text-light caps">Execution</h4>
+                <p class="text-mid-2">
+                    Creativity is allowing yourself to make mistakes. Art is knowing which ones to keep.
+                </p>
+            </div>
+            
+            <div class="col-md-4 text-center waypoint-4">
+                <h3><span class="large icon-support"></span></h3>
+                <h4 class="text-light caps">Support</h4>
+                <p class="text-mid-2">
+                    Everything that we encounter leaves traces behind. Everything contributes imperceptibly to our education.
+                </p>
+            </div>
+            
         </div>
-        
-        <div class="col-md-4">
-            Name: My Second Project
-        </div>
-        
-        <div class="col-md-4">
-            Name: My Third Project
-        </div>
-        
     </div>
 </section>
 
@@ -214,6 +233,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
 
     <script src="assets/js/waypoints.min.js"></script>
+<script src="assets/js/jquery.flexslider.js"></script>
+<script src="assets/js/jquery.stellar.js"></script>
 <script src="assets/js/scripts.js"></script>
   </body>
 </html>
