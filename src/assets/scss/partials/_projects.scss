@@ -1,0 +1,45 @@
+.photo-wrapper {
+    background-color: $white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: relative;
+    overflow: hidden;
+    &:after {
+        content: attr(data-name);
+        position: absolute;
+        top: 0;
+        left: 10px;
+        color: $black;
+        opacity: 0;
+        transition: all 0.2s;
+    }
+    img {
+        opacity: 1;
+        transition: all 0.2s 0.2s;
+    }
+    &:hover {
+        img {
+            opacity: 0.5;
+            transition: all 0.3s;
+        }
+        &:after {
+            top: 10px;
+            opacity: 1;
+            transition: all 0.3s 0.3s;
+        }
+    }
+}
+.project-img {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: 50%;
+    transition: 0.5s all;
+    &:hover {
+        opacity: 0.4;
+        transition: 0.5s all;
+    }
+}

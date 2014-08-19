@@ -15,3 +15,20 @@
     animation-delay: 1s; 
     -webkit-animation-delay: 1s;
 }
+
+.slide {
+    transform: translateY(100%);
+    transition: 0.5s all;
+    &.in {
+        transform: translateY(0);
+        transition: 0.5s all;
+    }
+    &.fade {
+        opacity: 1;
+    }
+}
+
+// .blurry {
+//     filter: blur(4px);
+//     transition: 0.5s all;
+// }

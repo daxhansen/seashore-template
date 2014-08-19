@@ -18,5 +18,8 @@
                 border-color: lighten($green-1, 10%);
             }
         }
+        &.btn-large {
+            padding: 30px 60px;
+        }
     }
 }

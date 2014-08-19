@@ -1,0 +1,37 @@
+<section id="section-b" class="white padding-lg ">
+    <div class="container-fluid">
+        <div class="col-md-12 flexslider">
+            <ul class="slides text-center">
+                <li>
+                {{#site.projects}}
+                    <div class="col-md-4">
+                        <figure class="sliding-image waypoint-3">
+                            <div class="img" style="background-image: url('assets/img/{{item.image}}')" ></div>
+                            <figcaption>
+                                <h4 class="caps text-center center-block text-white">{{item.name}}</h4>
+                                <a href="#!" data-toggle="modal" data-target="#{{item.id}}" class="btn btn-hollow">Learn More</a>
+                            </figcaption>
+                        </figure>
+                        <!-- Button trigger modal -->
+                    </div>
+                {{/site.projects}}
+                </li>
+                <li>
+                {{#site.projects}}
+                    <div class="col-md-4">
+                        <figure class="sliding-image waypoint-3">
+                            <div class="img" style="background-image: url('assets/img/{{item.image}}')" ></div>
+                            <figcaption>
+                                <h4 class="caps text-center center-block text-white">{{item.name}}</h4>
+                                <a href="#!" data-toggle="modal" data-target="#{{item.id}}" class="btn btn-hollow">Learn More</a>
+                            </figcaption>
+                        </figure>
+                        <!-- Button trigger modal -->
+                    </div>
+                {{/site.projects}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+{{> modals-1 }}

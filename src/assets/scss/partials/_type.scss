@@ -1,6 +1,4 @@
-h1, h2, h3, h4, h5 {
 
-}
 p {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -36,6 +34,17 @@ p {
     }
 }
 
+.medium,
+*.medium {
+    font-size: 2em;
+    @media screen and (max-width: $screen-md-min) {
+        font-size: 1.5em;
+    }
+    @media screen and (max-width: $screen-sm-min) {
+        font-size: 1em;
+    }
+}
+
 .kern-loose {
     letter-spacing: 0.25em;
     margin-right: -0.25em;
@@ -46,9 +55,69 @@ p {
     text-transform: uppercase;
 }
 
+.title,
+.sub-title {
+    text-align: center;
+}
+.title {
+    font-family: $sans;
+    font-weight: $bold;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 1.4em;
+    &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        left: 50%;
+        border-bottom: 1px solid $white;
+    }
+    &.animated:after {
+        width: 100%;
+        left: 0;
+        transition: all ease 0.5s 0.75s;
+    }
+}
+.sub-title {
+    font-family: $serif;
+    font-weight: $reg;
+    font-style: italic;
+}
+
 blockquote {
     font-size: 1.4em;
     font-family: $serif;
     font-style: italic;
     color: $mid-gray-1;
+}
+
+.quote {
+    font-style: italic;
+    &:first-letter {
+        font-size: 2em;
+        font-style: normal;
+    }
+    .author {
+        display: block;
+        font-family: $sans;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-style: normal;
+        margin-top: 2em;
+        opacity: 0.5;
+        &:before {
+            content: '-';
+            display: inline;
+            margin-right: 10px;
+        }
+    }
+}
+
+.text-left-sm,
+*.text-left-sm {
+    @media (max-width: $screen-sm-min) {
+        text-align: left;
+    }
 }

@@ -1,44 +1,19 @@
 #top-hero {
+    background-image: url('../img/hero-bg-blurry.jpg');
     background-image: url('../img/hero-bg.jpg');
-    background-size: cover;
-    //background-attachment: fixed;
+    background-size: 100%;
+    background-attachment: fixed;
     width: 100%;
     height: 0;
     padding-bottom: 55%;
     color: $white;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.5s background-image;
 
     .hero-title {
         margin-top: 17.5%;
     }
 
-    #title,
-    #sub-title {
-        text-align: center;
-    }
-    #title {
-        font-family: $sans;
-        font-weight: $bold;
-        text-transform: uppercase;
-        position: relative;
-        line-height: 1.4em;
-        &:after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 0;
-            position: absolute;
-            left: 50%;
-            border-bottom: 1px solid $white;
-        }
-        &.animated:after {
-            width: 100%;
-            left: 0;
-            transition: all ease 0.5s 0.75s;
-        }
-    }
-    #sub-title {
-        font-family: $serif;
-        font-weight: $reg;
-        font-style: italic;
-    }
 }

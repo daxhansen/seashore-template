@@ -66,9 +66,11 @@ $flipTransOff: all 0.4s ease 0s;
   position: relative;
   float: right;
   right: 30px;
-  top: 30px;
+  top: 60px;
+  margin-top: -30px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
+  z-index: 10;
   span {
     &:before,
     &:after {
@@ -93,15 +95,15 @@ $flipTransOff: all 0.4s ease 0s;
     }
 
 
-    transition: all 500ms ease-in-out;
-    -webkit-transition: all 500ms ease-in-out;
-    -moz-transition: all 500ms ease-in-out;
-    -o-transition: all 500ms ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     &:before, &:after {
-      transition: all 500ms ease-in-out;
-      -webkit-transition: all 500ms ease-in-out;
-      -moz-transition: all 500ms ease-in-out;
-      -o-transition: all 500ms ease-in-out;
+      transition: all 0.5s ease-in-out;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
     }
   }
   &.active span {

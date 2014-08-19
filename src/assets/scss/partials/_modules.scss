@@ -1,12 +1,122 @@
-
+section,
+.container,
+.container-fluid {
+    position: relative;
+    z-index: 10;
+}
 section {
     overflow: hidden;
+    position: relative;
 }
+#section-a {
+    //margin-top: 800px;
+
+}
+#section-c {
+    @media (min-width: $screen-sm-min) {
+        height: 600px;
+    }
+    
+    .row {
+        height: 100%;
+    }
+    .slides {
+        width: 75%;
+        margin: 0 auto;
+        padding: 45px 45px 60px;
+    }
+    
+}
+#section-c-mod-1 {
+        background-image: url('../img/stock-02.jpg');
+        background-size: cover;
+        @media (max-width: $screen-md-min) {
+            display: none;
+        }
+    }
 
 #section-d {
-    background-image: url('../img/dark-bg.jpg');
+    //background-image: url('../img/dark-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
     [class^="icon-"], [class*=" icon-"] {
         display: block;
         margin-bottom: 30px;
     }
 }
+
+#section-f {
+    .contact-tile {
+        background-color: $white;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        height: 300px;
+        padding: 20px;
+        position: relative;
+        z-index: 12;
+        transition: 0.5s all;
+        h3 {
+            color: mid-gray-1;
+            text-transform: uppercase;
+            &:after {
+                content: '';
+                display: block;
+                margin: 30px 0;
+                position: relative;
+                width: 84px;
+                left: 50%;
+                margin-left: -42px;
+                background-color: transparent;
+                background-image: url('../img/waves.png');
+                height: 8px;
+                background-repeat-y: no-repeat;
+                opacity: 0.25;
+
+            }
+        }
+        .map-it {
+            position: absolute;
+            display: block;
+            width: 80px;
+            opacity: 0;
+            left: 50%;
+            margin-left: -40px;
+            bottom: 12px;
+        }
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 0;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: 10;
+            transition: all 0.5s;
+            background-color: rgba($dark-gray-1, 0.0);
+        }
+        &:hover {
+            margin-top: -10px;
+            //border-bottom: 4px solid $mid-gray-2;
+            transition: all 0.5s;
+
+            .map-it {
+                opacity: 1;
+                bottom: 26px;
+                transition: all 0.5s;
+            }
+
+            &:after {
+                width: 90%;
+                left: 5%;
+                bottom: -10px;
+                height: 10px;
+                background-color: rgba($dark-gray-1, 0.25);
+            }
+        }
+
+    }
+}
+
+

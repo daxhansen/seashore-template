@@ -47,14 +47,14 @@
 </nav>
 <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
 
-    <div id="top-hero" data-stellar-background-ratio="0.25">
-    <div class="container">
+    <div id="top-hero">
+    <div class="container" data-stellar-ratio="0.8" data-stellar-vertical-offset="40">
         <div class="row text-center">
             <div class="col-sm-8 col-sm-offset-2 hero-title waypoint-1">
-                <h1 class="xlarge kern-loose" id="title">
+                <h1 class="xlarge kern-loose title">
                     Seashore
                 </h1>
-                <h2 id="sub-title">
+                <h2 class="sub-title">
                     A Template from Underbelly Creative
                 </h2>
             </div>
@@ -69,6 +69,7 @@
     <main role="main">
 
       
+
 <section id="section-a" class="light-gray padding-lg">
     <div class="container">
         <div class="row">
@@ -80,120 +81,313 @@
         </div>
     </div>
 </section>
-<section id="section-b" class="white padding-lg">
-    <div class="container">
-        <div class="row">
-            
-            <div class="col-md-4">
-                <!-- Button trigger modal -->
-                <a href="#!" data-toggle="modal" data-target="#project-01">
-                    <div class="waypoint-3 photo-wrapper" data-name="My First Project">
-                        <img src="assets/img/project-01.jpg" alt="My First Project">
+<section id="section-b" class="white padding-lg ">
+    <div class="container-fluid">
+        <div class="col-md-12 flexslider">
+            <ul class="slides text-center">
+                <li>
+                
+                    <div class="col-md-4">
+                        <figure class="sliding-image waypoint-3">
+                            <div class="img" style="background-image: url('assets/img/project-01.jpg')" ></div>
+                            <figcaption>
+                                <h4 class="caps text-center center-block text-white">My First Project</h4>
+                                <a href="#!" data-toggle="modal" data-target="#project-01" class="btn btn-hollow">Learn More</a>
+                            </figcaption>
+                        </figure>
+                        <!-- Button trigger modal -->
                     </div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="project-01" tabindex="-1" role="dialog" aria-labelledby="project-1Label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="project-1Label">My First Project</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img src="assets/img/project-01.jpg" alt="My First Project - full size">
-                            </div>
-                            <div class="modal-footer">
-                                <p class="project-description">
-                                    Take everything you like seriously, except yourselves.
-                                </p>
-                            </div>
+                
+                    <div class="col-md-4">
+                        <figure class="sliding-image waypoint-3">
+                            <div class="img" style="background-image: url('assets/img/project-02.jpg')" ></div>
+                            <figcaption>
+                                <h4 class="caps text-center center-block text-white">My Second Project</h4>
+                                <a href="#!" data-toggle="modal" data-target="#project-02" class="btn btn-hollow">Learn More</a>
+                            </figcaption>
+                        </figure>
+                        <!-- Button trigger modal -->
+                    </div>
+                
+                    <div class="col-md-4">
+                        <figure class="sliding-image waypoint-3">
+                            <div class="img" style="background-image: url('assets/img/project-03.jpg')" ></div>
+                            <figcaption>
+                                <h4 class="caps text-center center-block text-white">My Third Project</h4>
+                                <a href="#!" data-toggle="modal" data-target="#project-03" class="btn btn-hollow">Learn More</a>
+                            </figcaption>
+                        </figure>
+                        <!-- Button trigger modal -->
+                    </div>
+                
+                </li>
+                <li>
+                
+                    <div class="col-md-4">
+                        <figure class="sliding-image waypoint-3">
+                            <div class="img" style="background-image: url('assets/img/project-01.jpg')" ></div>
+                            <figcaption>
+                                <h4 class="caps text-center center-block text-white">My First Project</h4>
+                                <a href="#!" data-toggle="modal" data-target="#project-01" class="btn btn-hollow">Learn More</a>
+                            </figcaption>
+                        </figure>
+                        <!-- Button trigger modal -->
+                    </div>
+                
+                    <div class="col-md-4">
+                        <figure class="sliding-image waypoint-3">
+                            <div class="img" style="background-image: url('assets/img/project-02.jpg')" ></div>
+                            <figcaption>
+                                <h4 class="caps text-center center-block text-white">My Second Project</h4>
+                                <a href="#!" data-toggle="modal" data-target="#project-02" class="btn btn-hollow">Learn More</a>
+                            </figcaption>
+                        </figure>
+                        <!-- Button trigger modal -->
+                    </div>
+                
+                    <div class="col-md-4">
+                        <figure class="sliding-image waypoint-3">
+                            <div class="img" style="background-image: url('assets/img/project-03.jpg')" ></div>
+                            <figcaption>
+                                <h4 class="caps text-center center-block text-white">My Third Project</h4>
+                                <a href="#!" data-toggle="modal" data-target="#project-03" class="btn btn-hollow">Learn More</a>
+                            </figcaption>
+                        </figure>
+                        <!-- Button trigger modal -->
+                    </div>
+                
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Modals -->
+<div class="modal slide fade" id="project-01" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header dark header-img-bg" style="background-image: url('assets/img/project-01.jpg')">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title text-center title caps" id="project-1Label">Always Inspire</h3>
+                <h4 class="sub-title">A Project Page Modal</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row padding-md">
+                        <div class="col-md-6">
+                            <h4 class="text-right text-left-sm caps">The Question</h4>
+                            <p class="text-right text-left-sm">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore
+                            </p>
+                            <h4 class="text-right text-left-sm caps">The Answer</h4>
+                            <p class="text-right text-left-sm">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore laborum nisi magna dolor non labore dolor aute veniam Duis in voluptate reprehenderit et aliqua incididunt.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/img/project-02.jpg" alt="">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12 padding-lg">
+                            <h2 class="text-center caps">
+                                Life is not about finding yourself. Life is about creating yourself.
+                            </h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row padding-md">
+                        <div class="col-md-6">
+                            <img src="assets/img/project-03.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="text-left caps">The Question</h4>
+                            <p class="text-left">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore
+                            </p>
+                            <h4 class="text-left caps">The Answer</h4>
+                            <p class="text-left">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore laborum nisi magna dolor non labore dolor aute veniam Duis in voluptate reprehenderit et aliqua incididunt.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-4">
-                <!-- Button trigger modal -->
-                <a href="#!" data-toggle="modal" data-target="#project-02">
-                    <div class="waypoint-3 photo-wrapper" data-name="My Second Project">
-                        <img src="assets/img/project-02.jpg" alt="My Second Project">
+            <div class="modal-footer">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal slide fade" id="project-02" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header light header-img-bg" style="background-image: url('assets/img/project-02.jpg')">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title text-center title caps" id="project-1Label">Always Inspire</h3>
+                <h4 class="sub-title">A Project Page Modal</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row padding-md">
+                        <div class="col-md-6">
+                            <h4 class="text-right text-left-sm caps">The Question</h4>
+                            <p class="text-right text-left-sm">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore
+                            </p>
+                            <h4 class="text-right text-left-sm caps">The Answer</h4>
+                            <p class="text-right text-left-sm">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore laborum nisi magna dolor non labore dolor aute veniam Duis in voluptate reprehenderit et aliqua incididunt.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/img/project-01.jpg" alt="">
+                        </div>
                     </div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="project-02" tabindex="-1" role="dialog" aria-labelledby="project-1Label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="project-1Label">My Second Project</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img src="assets/img/project-02.jpg" alt="My Second Project - full size">
-                            </div>
-                            <div class="modal-footer">
-                                <p class="project-description">
-                                    I’ve been absolutely terrified every moment of my life and I’ve never let it keep me from doing a single thing that I wanted to do.
-                                </p>
-                            </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12 padding-lg">
+                            <h2 class="text-center caps">
+                                Life is not about finding yourself. Life is about creating yourself.
+                            </h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row padding-md">
+                        <div class="col-md-6">
+                            <img src="assets/img/project-03.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="text-left caps">The Question</h4>
+                            <p class="text-left">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore
+                            </p>
+                            <h4 class="text-left caps">The Answer</h4>
+                            <p class="text-left">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore laborum nisi magna dolor non labore dolor aute veniam Duis in voluptate reprehenderit et aliqua incididunt.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="col-md-4">
-                <!-- Button trigger modal -->
-                <a href="#!" data-toggle="modal" data-target="#project-03">
-                    <div class="waypoint-3 photo-wrapper" data-name="My Third Project">
-                        <img src="assets/img/project-03.jpg" alt="My Third Project">
+            <div class="modal-footer">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal slide fade" id="project-03" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header light header-img-bg" style="background-image: url('assets/img/project-03.jpg')">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h3 class="modal-title text-center title caps" id="project-1Label">Always Inspire</h3>
+                <h4 class="sub-title">A Project Page Modal</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row padding-md">
+                        <div class="col-md-6">
+                            <h4 class="text-right text-left-sm caps">The Question</h4>
+                            <p class="text-right text-left-sm">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore
+                            </p>
+                            <h4 class="text-right text-left-sm caps">The Answer</h4>
+                            <p class="text-right text-left-sm">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore laborum nisi magna dolor non labore dolor aute veniam Duis in voluptate reprehenderit et aliqua incididunt.
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="assets/img/project-02.jpg" alt="">
+                        </div>
                     </div>
-                </a>
-                <!-- Modal -->
-                <div class="modal fade" id="project-03" tabindex="-1" role="dialog" aria-labelledby="project-1Label" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                <h4 class="modal-title" id="project-1Label">My Third Project</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img src="assets/img/project-03.jpg" alt="My Third Project - full size">
-                            </div>
-                            <div class="modal-footer">
-                                <p class="project-description">
-                                    We do not believe in ourselves until someone reveals that deep inside us something is valuable, worth listening to, worthy of our trust, sacred to our touch. Once we believe in ourselves we can risk curiosity, wonder, spontaneous delight or any experience that reveals the human spirit.
-                                </p>
-                            </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12 padding-lg">
+                            <h2 class="text-center caps">
+                                Life is not about finding yourself. Life is about creating yourself.
+                            </h2>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row padding-md">
+                        <div class="col-md-6">
+                            <img src="assets/img/project-01.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="text-left caps">The Question</h4>
+                            <p class="text-left">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore
+                            </p>
+                            <h4 class="text-left caps">The Answer</h4>
+                            <p class="text-left">
+                                Lorem ipsum Sit dolore Excepteur eu sint elit mollit magna quis sint aute dolore magna labore deserunt dolore laborum nisi magna dolor non labore dolor aute veniam Duis in voluptate reprehenderit et aliqua incididunt.
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="modal-footer">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="section-c" class="light-gray container-fluid">
+    <div class="row">
+        <div id="section-c-mod-1" class="col-md-6 dark-gray fill-height">
+        </div>
+        <div class="col-md-6 fill-height">
+            <div id="slider-c" class="flexslider vert-center-slider">
+                <ul class="slides">
+                    <li>
+                        <div class="vert-center">
+                            <p class="quote text-mid text-center">
+                                I would rather be ashes than dust!
+                                <br/>
+                                I would rather that my spark should burn out in a brilliant blaze than it should be stifled by dry-rot.<br/>
+                                I would rather be a superb meteor, every atom of me in magnificent glow, than a sleepy and permanent planet.<br/>
+                                The function of man is to live, not to exist.<br/>
+                                I shall not waste my days trying to prolong them.<br/>
+                                I shall use my time.<br/>
+                                <span class="author">Jack London</span>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vert-center">
+                            <p class="quote text-mid">
+                                When it is working, you completely go into another place, you're tapping into things that are totally universal, completely beyond your ego and your own self. That's what it's all about.
+                                <span class="author">Keith Haring</span>
+                            </p>
+                            <p class="author"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vert-center">
+                            <p class="quote text-mid">
+                                Creative work is not a selfish act or a bid for attention on the part of the actor. It's a gift to the world and every being in it. Don't cheat us of your contribution. Give us what you've got.
+                                <span class="author">Steven Pressfield</span>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
             
         </div>
     </div>
 </section>
-<section id="section-c" class="white padding-lg">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h4 class="caps text-center">You're Going to make something awesome, I just know it.</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <blockquote>
-                    I would rather be ashes than dust!
-                    <br/><br/>
-                    I would rather that my spark should burn out in a brilliant blaze than it should be stifled by dry-rot.<br/><br/>
-                    I would rather be a superb meteor, every atom of me in magnificent glow, than a sleepy and permanent planet.<br/><br/>
-                    The function of man is to live, not to exist.<br/><br/>
-                    I shall not waste my days trying to prolong them.<br/><br/>
-                    I shall use my time.<br/><br/>
-                </blockquote>
-            </div>
+<div class="container-fluid white padding-lg">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center"><a href="" class="btn btn-hollow btn-large">Go out there and build something</a></h3>
         </div>
     </div>
-</section>
-<section id="section-d" class="dark-gray padding-lg" data-stellar-background-ratio="0.125">
+</div>
+<section id="section-d" class="dark-gray padding-lg">
     <div class="container">
         <div class="row">
             
@@ -217,13 +411,75 @@
                 <h3><span class="large icon-support"></span></h3>
                 <h4 class="text-light caps">Support</h4>
                 <p class="text-mid-2">
-                    Everything that we encounter leaves traces behind. Everything contributes imperceptibly to our education.
+                    All progress takes place outside the comfort zone.
                 </p>
             </div>
             
         </div>
     </div>
 </section>
+
+<section id="section-e" class="white padding-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-8 col-md-offset-2 waypoint-6">
+                    <div class="anchor"><span class="icon-anchor"></span></div>
+                    <p class="text-center medium quote">The best reason to start an organization is to make meaning; to create a product or service to make the world a better place. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="section-f" class="light-gray padding-lg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contact-tile">
+                    <div class="table">
+                        <div class="cell-middle">
+                            <h3>Email</h3>
+                            <a href="#!">
+                                hi@seashore.us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-tile">
+                    <div class="table">
+                        <div class="cell-middle">
+                            <h3>Location</h3>
+                            <span>123 Fake St.| Springfield, USA | 90210</span>
+                            <a href="#!" class="btn btn-hollow map-it">Map It</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-tile">
+                    <div class="table">
+                        <div class="cell-middle">
+                            <h3>Telephone</h3>
+                            <span class="telephone">
+                                (801) 345-6789
+                            </span>
+                            <h6 class="caps"></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="dark-gray container-fluid padding-md">
+    <div class="row">
+        <div class="col-md-12">
+            &copy;  
+        </div>
+    </div>
+</footer>
 
     </main>
 
