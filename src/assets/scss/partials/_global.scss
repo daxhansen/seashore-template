@@ -5,7 +5,11 @@ html {
 }
 
 a {
-    color: $blue;
+    color: $secondary;
+    &:hover {
+        color: lighten($secondary, 10%);
+        text-decoration: none;
+    }
 }
 .white,
 *.white {
@@ -57,16 +61,28 @@ a {
 .padding-sm {
     padding-top: $padding-sm;
     padding-bottom: $padding-sm;
+    @media (max-width: $screen-sm-min) {
+        padding-top: $padding-sm / 2;
+        padding-bottom: $padding-sm / 2;
+    }
 }
 
 .padding-md {
     padding-top: $padding-md;
     padding-bottom: $padding-md;
+    @media (max-width: $screen-sm-min) {
+        padding-top: $padding-md / 2;
+        padding-bottom: $padding-md / 2;
+    }
 }
 
 .padding-lg {
     padding-top: $padding-lg;
     padding-bottom: $padding-lg;
+    @media (max-width: $screen-sm-min) {
+        padding-top: $padding-lg / 2;
+        padding-bottom: $padding-lg / 2;
+    }
 }
 
 * img {
@@ -100,6 +116,13 @@ a {
     }
     &:after {
         left: 12px;
+    }
+    &.text-white {
+        color: $white;
+        &:before,
+        &:after {
+            background-color: $white;
+        }
     }
 }
 
@@ -153,13 +176,13 @@ figure.sliding-image {
     &:hover {
         img,
         .img {
-            opacity: 0.5;
+            opacity: 0.25;
             margin-top: -20px;
         }
         figcaption {
             opacity: 1;
             position: absolute;
-            top: 40%;
+            top: 33%;
             h4 {
                 opacity: 1;
                 transition-delay: 0.3s;

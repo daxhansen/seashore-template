@@ -2,7 +2,7 @@
 
 $(window).load(function() {
 
-    $('.nav_slide_button').click(function() {
+    $('.nav_slide_button, .flip-nav.open .top-nav li').click(function() {
         $('.flip-nav').toggleClass('open');
     });
     $('#slider-c').flexslider({
@@ -25,6 +25,44 @@ document.querySelector("#nav-toggle").addEventListener("click", function() {
 
 
 $(document).ready(function(){
+    window.isDesktop;
+
+    (function(){
+        var $el = $('#pollMQ');
+        if ($el.css('display') === 'block') {
+            window.isDesktop = true;
+        } else {
+            window.isDesktop = false;
+        }
+    })();
+    if(window.isDesktop) {
+        /* instantiate Stellar.js (parallax) */
+        //$(window).stellar();
+        $.stellar({
+            positionProperty: 'transform',
+            hideDistantElements: false,
+            horizontalOffset: 0
+        });
+
+        /** Smooth Scrolling **/
+        $(function() {
+            $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+                    var threshold = function() {
+                        return 0;
+                    };
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: (target.offset().top - threshold())
+                        }, 2000);
+                        return false;
+                    }
+                }
+            });
+        });
+    }
 
     /*  
     Set up waypoints (Waypoints.js)
@@ -56,6 +94,12 @@ $(document).ready(function(){
         offset: '75%'
     });
 
+    $('.waypoint-c-1').waypoint(function() {
+        $('.waypoint-c-1').addClass('animated fadeIn delay-short');
+    }, {
+        offset: '50%'
+    });
+
     $('.waypoint-4').waypoint(function() {
         
         $('.waypoint-4 h4').addClass('animated fadeIn');
@@ -82,8 +126,8 @@ $(document).ready(function(){
         offset: '75%'
     });
 
-    /* instantiate Stellar.js (parallax) */
-    $(window).stellar();
+   
+
 });
 
 

@@ -1,3 +1,88 @@
+html, body {
+    font-size: $font-base;
+}
+
+h1, .h1, 
+h2, .h2, 
+h3, .h3, 
+h4, .h4, 
+h5, .h5, 
+h6, .h6 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h1, .h1 {
+    font-size: $h1;
+}
+h2, .h2 {
+    font-size: $h2;
+}
+h3, .h3 {
+    font-size: $h3;
+}
+h4, .h4 {
+    font-size: $h4;
+}
+h5, .h5 {
+    font-size: $h5;
+}
+h6, .h6 {
+    font-size: $h6;
+    font-weight: $bold;
+}
+
+@media (max-width: $screen-md-min) {
+    html, body {
+        font-size: $font-base * 0.9;
+    }
+
+    h1, .h1 {
+        font-size: $h1 * 0.8;
+    }
+    h2, .h2 {
+        font-size: $h2 * 0.8;
+    }
+    h3, .h3 {
+        font-size: $h3 * 0.8;
+    }
+    h4, .h4 {
+        font-size: $h4 * 0.8;
+    }
+    h5, .h5 {
+        font-size: $h5 * 0.8;
+    }
+    h6, .h6 {
+        font-size: $h6 * 0.8;
+        font-weight: $bold;
+    }
+}
+
+@media (max-width: $screen-sm-min) {
+    html, body {
+        font-size: $font-base * 0.8;
+    }
+
+    h1, .h1 {
+        font-size: $h1 * 0.666;
+    }
+    h2, .h2 {
+        font-size: $h2 * 0.666;
+    }
+    h3, .h3 {
+        font-size: $h3 * 0.666;
+    }
+    h4, .h4 {
+        font-size: $h4 * 0.666;
+    }
+    h5, .h5 {
+        font-size: $h5 * 0.666;
+    }
+    h6, .h6 {
+        font-size: $h6 * 0.666;
+        font-weight: $bold;
+    }
+}
 
 p {
     margin-top: 15px;
@@ -19,7 +104,7 @@ p {
         font-size: 4em;
     }
     @media screen and (max-width: $screen-sm-min) {
-        font-size: 2em;
+        font-size: 3em;
     }
 }
 
@@ -64,7 +149,7 @@ p {
     font-weight: $bold;
     text-transform: uppercase;
     position: relative;
-    line-height: 1.4em;
+    //line-height: 1.4em;
     &:after {
         content: '';
         display: block;

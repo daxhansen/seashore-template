@@ -1,11 +1,32 @@
+
+
+
 $white: #f9fbfc;
-$black: #0f1214;
-$dark-gray-1: #242830;
-$mid-gray-1: #526d77;
-$mid-gray-2: #8fa5ad;
-$light-gray-1: #dee5ea;
-$green-1: #ebffbc;
-$blue: #428bca;
+$black: darken($white, 100%);
+$gray-10: darken($white, 10%);
+$gray-20: darken($white, 20%);
+$gray-30: darken($white, 30%);
+$gray-40: darken($white, 40%);
+$gray-50: darken($white, 50%);
+$gray-60: darken($white, 60%);
+$gray-70: darken($white, 70%);
+$gray-80: darken($white, 80%);
+$gray-90: darken($white, 90%);
+
+$light-gray-1: $gray-10;
+$mid-gray-1: $gray-60;
+$mid-gray-2: $gray-50;
+$dark-gray-1: $gray-90;
+
+
+
+$primary: #3B5160;
+$primary-hover: #598AAC;
+$secondary: #993938;
+$tertiary: #96BE74;
+
+$green-1: $tertiary;
+$blue: $primary;
 
 $sans: "Montserrat", sans-serif;
 $serif: "Droid Serif", serif;
@@ -14,6 +35,17 @@ $icons: 'seashore-icons';
 $reg: 400;
 $bold: 700;
 
+$font-base: 14px;
+$h1: $font-base * 3;
+$h2: $font-base * 2.5;
+$h3: $font-base * 2;
+$h4: $font-base * 1.5;
+$h5: $font-base * 1.666667;
+$h6: $font-base;
+
+$screen-xxl-min: 2100px;
+$screen-xl-min: 1440px;
+$screen-lg-min: 1200px;
 $screen-md-min: 768px;
 $screen-sm-min: 320px;
 

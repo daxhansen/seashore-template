@@ -3,15 +3,41 @@ nav {
   ul {
     list-style: none;
     padding: 0;
+    margin: 0;
     li {
       color: rgba(255, 255, 255, 0.6);
-      display: block;
-      border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
-      //transition: all 0.5s ease;
+      text-align: center;
+      //border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+      transition: all 0.25s;
       padding-left: 0;
       position: relative;
+      &:nth-child(1){
+        background-color: $gray-30;
+      }
+      &:nth-child(2){
+        background-color: $gray-40;
+      }
+      &:nth-child(3){
+        background-color: $gray-50;
+      }
+      &:nth-child(4){
+        background-color: $gray-60;
+      }
+      &:nth-child(5){
+        background-color: $gray-70;
+      }
+      &:nth-child(6){
+        background-color: $gray-80;
+      }
+      &:nth-child(7){
+        background-color: $gray-90;
+      }
       &:last-child {
         border: none;
+      }
+      &:hover {
+        background-color: lighten($black, 5%);
+        transition: all 0.1s;
       }
       a {
         color: rgba(255, 255, 255, 0.6);
@@ -37,6 +63,7 @@ $flipTransOff: all 0.4s ease 0s;
     max-height: 0;
     overflow: hidden;
     transition: $flipTransOff;
+    margin: 0 -15px;
     .top-nav {
         opacity: 0.1;
         transition: $flipTransOff;

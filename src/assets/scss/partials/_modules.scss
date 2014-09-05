@@ -12,6 +12,17 @@ section {
     //margin-top: 800px;
 
 }
+#section-b {
+    figure.sliding-image {
+        margin-bottom: 30px;
+    }
+    @media (max-width: $screen-sm-min) {
+        .flex-direction-nav {
+            opacity: 0;
+        }
+    }
+
+}
 #section-c {
     @media (min-width: $screen-sm-min) {
         height: 600px;
@@ -25,11 +36,24 @@ section {
         margin: 0 auto;
         padding: 45px 45px 60px;
     }
+    @media (min-width: $screen-sm-min) {
+        .slides {
+            padding: 0 15px;
+            width: 100%;
+        }
+        .flex-direction-nav {
+            opacity: 0;
+        }
+    }
     
 }
 #section-c-mod-1 {
         background-image: url('../img/stock-02.jpg');
         background-size: cover;
+        .display-table {
+            width: 100%;
+            text-align: center;
+        }
         @media (max-width: $screen-md-min) {
             display: none;
         }
@@ -43,20 +67,28 @@ section {
         display: block;
         margin-bottom: 30px;
     }
+    @media (max-width: $screen-md-min) {
+        .waypoint-4 {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 #section-f {
     .contact-tile {
         background-color: $white;
         text-align: center;
-        width: 90%;
+        width: 98%;
         margin: 0 auto;
         height: 300px;
         padding: 20px;
         position: relative;
         z-index: 12;
         transition: 0.5s all;
-        h3 {
+        @media (max-width: $screen-md-min) {
+            margin-bottom: 30px;
+        }
+        h4 {
             color: mid-gray-1;
             text-transform: uppercase;
             &:after {
@@ -72,7 +104,6 @@ section {
                 height: 8px;
                 background-repeat-y: no-repeat;
                 opacity: 0.25;
-
             }
         }
         .map-it {
@@ -115,7 +146,12 @@ section {
                 background-color: rgba($dark-gray-1, 0.25);
             }
         }
-
+        @media (max-width: $screen-sm-min) {
+            .map-it {
+                opacity: 1;
+                bottom: 34px;
+            }
+        }
     }
 }
 

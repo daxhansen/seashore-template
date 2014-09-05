@@ -5,21 +5,49 @@
         text-transform: uppercase;
         border-radius: 0px;
         transition: $button-hover;
-
-        &:hover {
-            transition: $button-hover;
+        position: relative;
+        z-index: 2;
+        &.spread:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background-color: rgba($black, 0.7);
+            transition: all 0.25s 0.15s, opacity 0.25s;
+            z-index: -1;
+            opacity: 0;
         }
 
-        &.green {
-            color: $green-1;
-            border-color: $green-1;
+
+        &.tertiary {
+            color: $tertiary;
+            border-color: $tertiary;
             &:hover {
-                color: lighten($green-1, 10%);
-                border-color: lighten($green-1, 10%);
+                color: lighten($tertiary, 10%);
+                border-color: lighten($tertiary, 10%);
+            }
+        }
+        &:hover {
+            transition: $button-hover;
+            &.spread:before {
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: 0%;
+                border-radius: 0px;
+                opacity: 0.9;
+                transition: top 0.15s, left 0.25s, height 0.15s, width 0.25s, border-radius 0.2 0.25s, opacity 0.2s;
             }
         }
         &.btn-large {
             padding: 30px 60px;
         }
+    }
+    @media (max-width: $screen-sm-min) {
+        white-space: normal;
     }
 }
