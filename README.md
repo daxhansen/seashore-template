@@ -21,8 +21,9 @@ Assemble is a component and static site generator that makes it dead simple to b
 
 ## Special Thanks to:
 
-- Icomoon
-- Waypoints.js
-- Flexslider
-- Animate.css
-- Fontawesome
+- [Icomoon] (http://icomoon.io)
+- [Waypoints.js] (https://github.com/imakewebthings/jquery-waypoints)
+- [Flexslider] (http://flexslider.woothemes.com/)
+- [Animate.css] (http://daneden.github.io/animate.css/)
+- [Fontawesome] (http://fortawesome.github.io/Font-Awesome/)
+- [Unsplash] (http://unsplash.com)
